@@ -9,6 +9,7 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
 });
 
 
+// Passa as imagens no carrossel
 const images = document.querySelectorAll('.carousel-images img');
 const leftArrow = document.querySelector('.arrow.left');
 const rightArrow = document.querySelector('.arrow.right');

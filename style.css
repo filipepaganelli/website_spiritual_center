@@ -97,7 +97,7 @@ main section {
   margin-bottom: 30px;
   max-width: 900px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* sombra suave */
-  margin-left: 20px;
+  margin-left: auto;
   margin-right: auto;
   color: #333;
 }
@@ -138,11 +138,14 @@ section {
 
 .carousel-images {
   display: flex;
+  justify-content: center; 
+  align-items: center;  
   transition: transform 0.5s ease;
 }
 
 .carousel-images img {
-  width: 100%;
+  width: 500px;
+  height: auto;
   display: none;
   object-fit: cover;
 }
