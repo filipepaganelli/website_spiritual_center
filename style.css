@@ -1,0 +1,213 @@
+/* Estilos básicos para parecer iniciante */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ background-image: url(images/background.jpg);
+  background-repeat: repeat;
+  background-size: auto;
+  
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: lightblue;
+  color: #333;
+  padding: 10px 20px;
+  text-align: center;
+    flex-wrap: wrap;
+}
+#logo-jesus {
+  width: 300px; /* tamanho ajustável */
+  height: auto;
+  border-radius: 2px;
+}
+
+header h1 {
+  margin: 0;
+  text-shadow: 2px 2px 6px white;
+  font-size: 1.8rem;
+  flex: 1 1 auto; /* para ocupar espaço restante */
+  text-align: center;
+}
+
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#menu {
+  display: none;
+  list-style: none;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: fit-content;
+  flex-direction: column;
+}
+
+#menu li {
+  margin: 5px 0;
+  display: inline;
+}
+
+#menu li:not(:last-child)::after {
+  content: " | ";
+  color: white;
+  padding: 0 10px;
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+#menu a:hover {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+#menu-toggle {
+  background-color: #2d4373;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+main {
+  padding: 20px;
+
+}
+
+main section {
+  background-color: rgba(255, 255, 255, 0.9); /* branco translúcido para ficar leve */
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-bottom: 30px;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* sombra suave */
+  margin-left: 20px;
+  margin-right: auto;
+  color: #333;
+}
+
+
+section {
+  margin-bottom: 30px;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Proporção 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 15px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.foto-carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 30px auto 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-images img {
+  width: 100%;
+  display: none;
+  object-fit: cover;
+}
+
+.carousel-images img.active {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: white;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+
+footer {
+  background-color: lightblue;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsivo */
+@media (min-width: 600px) {
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #menu li {
+    margin: 0;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+}
