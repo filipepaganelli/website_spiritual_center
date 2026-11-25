@@ -3,35 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Centro Espírita Obreiros da Caridade</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Centro Espírita Obreiros da Caridade | São Lourenço - MG</title>
+  <meta name="description" content="Centro Espírita Obreiros da Caridade em São Lourenço (MG): palestras públicas às segundas e quartas às 20h, estudos doutrinários e tratamento espiritual aos sábados. Rua Comendador Oscar Fagundes, 140. Aberto a todos." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://www.obreirosdacaridade.com.br/" />
+  <meta name="theme-color" content="#add8e6" />
+  <link rel="icon" href="jesus.png" type="image/webp" />
+  <link rel="apple-touch-icon" href="jesus.png" />
 
+  <meta name="geo.region" content="BR-MG" />
+  <meta name="geo.placename" content="São Lourenço" />
+
+  <!-- Compartilhamento (WhatsApp, Facebook etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Centro Espírita Obreiros da Caridade" />
+  <meta property="og:title" content="Centro Espírita Obreiros da Caridade | São Lourenço - MG" />
+  <meta property="og:description" content="Palestras públicas, estudos da Doutrina Espírita e tratamento espiritual em São Lourenço (MG). Aberto a todos, desde 1996." />
+  <meta property="og:url" content="https://www.obreirosdacaridade.com.br/" />
+  <meta property="og:image" content="https://www.obreirosdacaridade.com.br/centro_4.jpeg" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:image:alt" content="Fachada do Centro Espírita Obreiros da Caridade em São Lourenço - MG" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Dados estruturados para o Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PlaceOfWorship",
+    "@id": "https://www.obreirosdacaridade.com.br/#centro",
+    "name": "Centro Espírita Obreiros da Caridade",
+    "alternateName": "Obreiros da Caridade",
+    "description": "Centro espírita em São Lourenço (MG) dedicado ao estudo e à prática da Doutrina Espírita à luz do Evangelho de Jesus, fundado em 5 de setembro de 1996.",
+    "url": "https://www.obreirosdacaridade.com.br/",
+    "image": [
+      "https://www.obreirosdacaridade.com.br/centro_4.jpeg",
+      "https://www.obreirosdacaridade.com.br/centro_1.jpeg",
+      "https://www.obreirosdacaridade.com.br/centro_3.jpeg"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Comendador Oscar Fagundes, 140",
+      "addressLocality": "São Lourenço",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=Centro+Esp%C3%ADrita+Obreiros+da+Caridade+S%C3%A3o+Louren%C3%A7o",
+    "isAccessibleForFree": true,
+    "publicAccess": true
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
 
-    <img src="jesus.png" alt="Imagem Jesus" id="logo-jesus" />
+    <img src="jesus.png" alt="Imagem de Jesus, símbolo do Centro Espírita Obreiros da Caridade" id="logo-jesus" />
     <h1>Centro Espírita Obreiros da Caridade</h1>
-  
-    <nav>
-      <button id="menu-toggle">☰ Menu</button>
+
+    <nav aria-label="Menu principal">
+      <button id="menu-toggle" aria-controls="menu">☰ Menu</button>
       <ul id="menu">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#atividades">Atividades</a></li>
         <li><a href="#localizacao">Localização</a></li>
       </ul>
     </nav>
-    
+
   </header>
 
   <main>
     <section id="sobre">
-      <h2>Sobre</h2>
-      <p>O Centro Espírita Obreiros da Caridade de São Lourenço - MG é um espaço dedicado ao estudo e prática da Doutrina Espírita.
-        Foi fundado em 5 de Setembro de 1996 e desde então buscar seguir e divulgar os princípios da doutrina espírita sempre à luz do evangelho de Jesus Cristo.
-      <br> O Centro está aberto à todos que possuam interesse em conhecer um pouco mais sobre a doutrina.</p>
+      <h2>Sobre o Centro Espírita em São Lourenço</h2>
+      <p>O Centro Espírita Obreiros da Caridade, em São Lourenço - MG, no Sul de Minas, é um espaço dedicado ao estudo e à prática da Doutrina Espírita codificada por Allan Kardec.
+        Foi fundado em 5 de setembro de 1996 e, desde então, busca seguir e divulgar os princípios da Doutrina Espírita, sempre à luz do Evangelho de Jesus Cristo.
+      <br> O Centro está aberto a todos que tenham interesse em conhecer um pouco mais sobre a doutrina.</p>
     </section>
 
     <section id="atividades">
@@ -44,26 +93,26 @@
       </ul>
 
       <div class="foto-carousel">
-  <button class="arrow left">&#8592;</button>
+  <button class="arrow left" aria-label="Foto anterior">&#8592;</button>
 
   <div class="carousel-images">
-    <img src="centro_1.jpeg" alt="Foto 1 do centro espírita" class="active">
-    <img src="centro_2.jpeg" alt="Foto 2 do centro espírita">
-    <img src="centro_3.jpeg" alt="Foto 3 do centro espírita">
-    <img src="centro_4.jpeg" alt="Foto 4 do centro espírita">
+    <img src="centro_1.jpeg" alt="Salão de palestras do Centro Espírita Obreiros da Caridade" class="active">
+    <img src="centro_2.jpeg" alt="Salão de palestras do Centro Espírita Obreiros da Caridade" loading="lazy">
+    <img src="centro_3.jpeg" alt="Biblioteca espírita do Centro Espírita Obreiros da Caridade" loading="lazy">
+    <img src="centro_4.jpeg" alt="Fachada do Centro Espírita Obreiros da Caridade em São Lourenço - MG" loading="lazy">
   </div>
 
-  <button class="arrow right">&#8594;</button>
+  <button class="arrow right" aria-label="Próxima foto">&#8594;</button>
 </div>
     </section>
 
     <section id="localizacao">
       <h2>Localização</h2>
-      <p>Estamos localizados na Rua Comendador Oscár Fagundes, 140, São Lourenço - Minas Gerais
-        <br><br>Clique no mapa abaixo para mais informações: ⬇️⬇️ 
+      <p>Estamos localizados na Rua Comendador Oscar Fagundes, 140, São Lourenço - Minas Gerais
+        <br><br>Clique no mapa abaixo para mais informações: ⬇️⬇️
       </p>
       <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.2342618216376!2d-45.050921024936315!3d-22.117042179818824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b007f0af825%3A0x9fa99587dea82a3!2sCentro%20Esp%C3%ADrita%20Obreiros%20da%20Caridade!5e0!3m2!1spt-BR!2sbr!4v1748393128219!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    <iframe title="Mapa do Centro Espírita Obreiros da Caridade em São Lourenço - MG" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.2342618216376!2d-45.050921024936315!3d-22.117042179818824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cb4b007f0af825%3A0x9fa99587dea82a3!2sCentro%20Esp%C3%ADrita%20Obreiros%20da%20Caridade!5e0!3m2!1spt-BR!2sbr!4v1748393128219!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
     </iframe>
       </div>
@@ -73,7 +122,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Centro Espírita Obreiros da Caridade</p>
+    <p>&copy; 2025 Centro Espírita Obreiros da Caridade · São Lourenço - MG</p>
   </footer>
 
   <script src="script.js"></script>
